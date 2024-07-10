@@ -18,9 +18,10 @@ nav {
 }
 nav a {
     text-align: center;
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: "Merienda";
+    font-size: 1.3em;
     padding: 35px;
 }
 nav a:hover {
@@ -112,9 +113,10 @@ footer {
     align-items: center;
 }
 footer a, footer p {
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: "Merienda";
+    font-size: 1.3em;
 }
 footer a:hover {
     color: #E6BC69;
