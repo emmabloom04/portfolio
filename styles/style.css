@@ -76,8 +76,9 @@ div.home-msg {
 main.aboutme-grid {
     display: grid;
     grid-template-columns: 25px 1fr 1fr 1fr 25px;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 25px 1fr;
     row-gap: 25px;
+    column-gap: 25px;
 }
 .aboutme-img {
     width: 100%;
@@ -85,7 +86,8 @@ main.aboutme-grid {
     grid-row-start: 3;
 }
 .aboutme-title {
-    color: #EAA1B4;
+    color: black;
+    padding: 5%;
     grid-column: 2/3;
     grid-row-start: 2;
     z-index: 1;
@@ -98,11 +100,39 @@ main.aboutme-grid {
     grid-column: 1/6;
     grid-row-start: 2;
 }
-.aboutme-msg {
-    grid-column: 3/5;
-    grid-row-start: 3;
+#Intro, #Music, #Traveling, #Future {
     font-family: "Concert One";
     padding: 30px;
+}
+.tabs {
+    grid-column: 3/5;
+    grid-row-start: 3;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #A44DEB;
+    background-color: #BC88EB;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: "Merienda";
+    font-size: 1.3em;
+}
+.tab button:hover {
+    background-color: #E6BC69;
+}
+.tab button.active {
+    background-color: #A44DEB;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
 }
 footer {
     background-color: #BC88EB;
