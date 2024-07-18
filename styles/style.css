@@ -134,6 +134,61 @@ main.aboutme-grid {
     padding: 6px 12px;
     border-top: none;
 }
+.experience-grid {
+    display: grid;
+    grid-template-rows: 25px 250px 1fr 50px 1fr;
+    grid-template-columns: 25px 1fr 50px 1fr 50px 1fr 25px;
+}
+.experience-title {
+    color: #A44DEB;
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.top-img, .bottom-img {
+    width: 100%;
+}
+.top-img {
+    grid-column: 5/7;
+    grid-row-start: 2;
+}
+.bottom-img {
+    grid-column: 2/4;
+    grid-row-start: 4;
+    z-index: -1;
+}
+.experience-msg {
+    grid-column: 3/6;
+    grid-row: 3/5;
+    font-family: "Concert One";
+    background-color: #EAA1B4;
+    padding: 8px;
+    border-radius: 7px;
+    border: solid 2px #e67895;
+    box-shadow: 5px 5px 10px black;
+}
+div.experience-msg a {
+    text-decoration: none;
+    color: black;
+    font-family: "Concert One";
+    font-size: 1.5em;
+}
+div.experience-msg button {
+    cursor: pointer;
+    outline: none;
+    box-shadow: 5px 5px 10px black;
+    background-color: #e67895;
+    padding: 7px;
+    border-radius: 7px;
+}
+div.experience-msg button:hover {
+    background-color: #e45a7f;
+}
+div.experience-msg button:active {
+    background-color: #e45a7f;
+    box-shadow: 5px 5px 10px black;
+    transform: translateY(4px);
+}
 footer {
     background-color: #BC88EB;
     padding: 25px 50px;
