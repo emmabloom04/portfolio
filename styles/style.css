@@ -167,12 +167,6 @@ main.aboutme-grid {
     border: solid 2px #e67895;
     box-shadow: 5px 5px 10px black;
 }
-div.experience-msg a {
-    text-decoration: none;
-    color: black;
-    font-family: "Concert One";
-    font-size: 1.5em;
-}
 div.experience-msg button {
     cursor: pointer;
     outline: none;
@@ -180,6 +174,9 @@ div.experience-msg button {
     background-color: #e67895;
     padding: 7px;
     border-radius: 7px;
+    font-family: "Concert One";
+    font-size: 1.5em;
+    color: black;
 }
 div.experience-msg button:hover {
     background-color: #e45a7f;
